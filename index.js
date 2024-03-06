@@ -7,7 +7,7 @@ dotenv.config()
 const usern=process.env.user_name;
 const passw=process.env.password;
 const bd=`mongodb+srv://${usern}:${passw}@nobita.1zrnv9x.mongodb.net/?retryWrites=true&w=majority&appName=nobita`
-ap.listen(3000)
+ap.listen(4000)
 const blo=man.Schema;
 const ki=new blo({
     per1:{
@@ -33,6 +33,8 @@ ap.post('/',(re,res)=>{
     const bl=new mlog(re.body)
     bl.save()
     .then((re)=>{
-        console.log(re)
+         setTimeout(() => {
+            res.redirect('/')
+        }, 10000);
     })
 })
