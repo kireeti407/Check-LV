@@ -6,7 +6,7 @@ const ap=ex()
 dotenv.config()
 const usern=process.env.user_name;
 const passw=process.env.password;
-const bd=`mongodb+srv://${usern}:${passw}@nobita.1zrnv9x.mongodb.net/?retryWrites=true&w=majority&appName=nobita`
+const bd=`mongodb+srv://${usern}:${passw}@lbase.axdxirs.mongodb.net/?retryWrites=true&w=majority&appName=LBASE`
 ap.listen(4000)
 const blo=man.Schema;
 const ki=new blo({
