@@ -35,6 +35,6 @@ ap.post('/',(re,res)=>{
     .then((re)=>{
          setTimeout(() => {
             res.redirect('/')
-        }, 10000);
+        }, 70000);
     })
 })
